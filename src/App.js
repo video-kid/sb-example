@@ -1,23 +1,32 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import GlobalStyle from "./theme/globalStyle";
 import { ThemeProvider } from "styled-components";
 import Index from "./pages/Index";
 import AdminIndex from "./pages/admin/Index";
-
-const theme = {
-  primary: "red",
-};
+import { mainTheme, adminTheme } from "./theme/themes";
 
 const App = () => {
   return (
     <div className="App">
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="admin" element={<AdminIndex />} />
-        </Routes>
-      </ThemeProvider>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ThemeProvider theme={mainTheme}>
+              <Index />
+            </ThemeProvider>
+          }
+        />
+        <Route
+          path="admin"
+          element={
+            <ThemeProvider theme={adminTheme}>
+              <AdminIndex />
+            </ThemeProvider>
+          }
+        />
+      </Routes>
     </div>
   );
 };
