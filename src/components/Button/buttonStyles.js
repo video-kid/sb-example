@@ -47,4 +47,16 @@ export const ButtonStyles = css`
   &:focus {
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
   }
+  ${({ href, to }) => (href || to ? LinkButtonStyles : null)};
+  ${({ disabled }) => (disabled ? DisabledButtonStyles : null)};
+`;
+
+export const LinkButtonStyles = css`
+  text-decoration: none;
+  width: max-content;
+`;
+
+export const DisabledButtonStyles = css`
+  filter: grayscale(100%);
+  cursor: not-allowed;
 `;
