@@ -6,8 +6,8 @@ import { buttonStyles } from "./buttonStyles";
 /**
  * Button component
  *
- * @param {string} variant Variants are "danger", "secondary", if theres no special version then default is primary
- * @param {boolean} disabled make button disabled, but better than html disabled
+ * @param {string} [variant] Variants are "danger", "secondary", if theres no special version then default is primary
+ * @param {boolean} [disabled=false] make button disabled, but better than html disabled
  * @returns {HTMLElement} Return Button with proper attributes
  */
 
