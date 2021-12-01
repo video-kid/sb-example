@@ -1,4 +1,5 @@
 const mainTheme = {
+  name: "mainTheme",
   buttons: {
     primary: {
       background: "#3700b3",
@@ -19,6 +20,7 @@ const mainTheme = {
 };
 
 const adminTheme = {
+  name: "adminTheme",
   buttons: {
     primary: {
       background: "#00e676",

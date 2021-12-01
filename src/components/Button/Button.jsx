@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ButtonStyles, LinkButtonStyles } from "./buttonStyles";
+import { ButtonStyles } from "./buttonStyles";
 
 /**
  * Button component
