@@ -3,11 +3,14 @@ import { withThemesProvider } from "storybook-addon-styled-component-theme";
 import { ThemeProvider } from "styled-components";
 import { adminTheme, mainTheme } from "../src/theme/themes";
 import GlobalStyle from "../src/theme/globalStyle";
+import { MemoryRouter } from "react-router";
+
+const storyPreviewStyles = { minHeight: "100vh", overflow: "hidden" };
 
 addDecorator((story) => (
-  <div>
+  <div style={storyPreviewStyles}>
     <GlobalStyle />
-    {story()}
+    <MemoryRouter initialEntries={["/"]}>{story()}</MemoryRouter>
   </div>
 ));
 

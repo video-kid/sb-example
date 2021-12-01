@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
 :root {
   --default-font: 'Source Sans Pro', sans-serif;
   --special-font: 'Playfair Display', serif;
-  //--special-font: 'Poppins', sans-serif;
+  --special-font-admin: 'Poppins', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: border-box;
