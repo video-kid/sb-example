@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-export const ButtonResetCss = css`
+export const buttonResetCss = css`
   color: inherit;
   margin: 0;
   padding: 0;
@@ -15,8 +15,8 @@ export const ButtonResetCss = css`
   }
 `;
 
-export const ButtonStyles = css`
-  ${ButtonResetCss}
+export const buttonStyles = css`
+  ${buttonResetCss}
   overflow: visible;
   border: 1px solid
     ${({ variant = "primary", theme }) => theme.buttons[variant].border};
@@ -30,16 +30,16 @@ export const ButtonStyles = css`
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
   }
   color: ${(props) => console.log(props)};
-  ${({ href, to }) => (href || to ? LinkButtonStyles : null)};
-  ${({ disabled }) => (disabled ? DisabledButtonStyles : null)};
+  ${({ href, to }) => (href || to ? linkButtonStyles : null)};
+  ${({ disabled }) => (disabled ? disabledButtonStyles : null)};
 `;
 
-export const LinkButtonStyles = css`
+export const linkButtonStyles = css`
   text-decoration: none;
   width: max-content;
 `;
 
-export const DisabledButtonStyles = css`
+export const disabledButtonStyles = css`
   filter: grayscale(100%);
   cursor: not-allowed;
 `;

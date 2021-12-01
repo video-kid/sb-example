@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { ButtonStyles } from "./buttonStyles";
+import { buttonStyles } from "./buttonStyles";
 
 /**
  * Button component
@@ -53,5 +53,5 @@ const Button = ({
 };
 
 export default styled(Button)`
-  ${ButtonStyles}
+  ${buttonStyles}
 `;
