@@ -4,7 +4,7 @@ import freezeForThreeSeconds from "../helpers/freezeForThreeSeconds";
 import useLock from "./useLock";
 
 export default {
-  title: "Hooks/Examples",
+  title: "global/hooks",
   component: {},
 };
 
