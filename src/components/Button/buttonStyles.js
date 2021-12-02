@@ -29,7 +29,6 @@ export const buttonStyles = css`
   &:focus {
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
   }
-  color: ${(props) => console.log(props)};
   ${({ href, to }) => (href || to ? linkButtonStyles : null)};
   ${({ disabled }) => (disabled ? disabledButtonStyles : null)};
 `;

@@ -11,7 +11,7 @@ const Primary = styled.h1`
 const Secondary = styled.h2`
   margin: 0;
   font-size: 20px;
-  font-family: var(--special-font);
+  font-family: ${({ theme }) => theme.heading.secondary.fontFamily};
   line-height: 1;
   font-weight: 600;
 `;
@@ -19,7 +19,7 @@ const Secondary = styled.h2`
 const Subheader = styled.h3`
   margin: 0;
   font-size: 16px;
-  font-family: var(--special-font);
+  font-family: ${({ theme }) => theme.heading.subheader.fontFamily};
   line-height: 1;
   font-weight: 600;
 `;
